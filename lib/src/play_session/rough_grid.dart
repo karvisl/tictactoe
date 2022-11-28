@@ -8,7 +8,11 @@ class RoughGrid extends StatelessWidget {
   final int width;
   final int height;
 
-  const RoughGrid(this.width, this.height, {super.key});
+  const RoughGrid(
+    this.width,
+    this.height, {
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

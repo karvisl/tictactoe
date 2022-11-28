@@ -7,7 +7,11 @@ import 'package:tictactoe/src/play_session/rough_grid.dart';
 class Board extends StatefulWidget {
   final VoidCallback? onPlayerWon;
 
-  const Board({super.key, required this.setting, this.onPlayerWon});
+  const Board({
+    required this.setting,
+    this.onPlayerWon,
+    Key? key,
+  }) : super(key: key);
 
   final BoardSetting setting;
 

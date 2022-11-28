@@ -22,8 +22,9 @@ class DelayedAppear extends StatefulWidget {
     required int ms,
     this.delayStateCreation = false,
     this.onDelayFinished,
-    super.key,
-  }) : delay = Duration(milliseconds: ms);
+    Key? key,
+  })  : delay = Duration(milliseconds: ms),
+        super(key: key);
 
   @override
   State<DelayedAppear> createState() => _DelayedAppearState();

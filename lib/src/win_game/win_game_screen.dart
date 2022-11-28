@@ -13,9 +13,9 @@ class WinGameScreen extends StatelessWidget {
   final Score score;
 
   const WinGameScreen({
-    super.key,
     required this.score,
-  });
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

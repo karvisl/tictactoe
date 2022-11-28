@@ -40,8 +40,8 @@ class AnimatedSprite extends AnimatedWidget {
     this.frameStart = 0,
     this.flipHorizontally = false,
     this.color,
-    super.key,
-  }) : super(listenable: animation);
+    Key? key,
+  }) : super(key: key, listenable: animation);
 
   @override
   Widget build(BuildContext context) {
@@ -73,8 +73,8 @@ class Sprite extends StatefulWidget {
     this.color,
     this.flipHorizontally = false,
     this.frame = 0,
-    super.key,
-  });
+    Key? key,
+  }) : super(key: key);
 
   @override
   State<Sprite> createState() => _SpriteState();
